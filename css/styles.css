@@ -1,0 +1,454 @@
+/*reglas
+selectores - un objeto del html
+3 tipos:
+1- selector de tag
+2- selector descendente, hios dentro de un arbol den odos, ej:
+body div nav img
+3- class or id
+class can repeat, may elemtns
+.Sec{}
+id: only one #
+declaraciones - lo que haces con ese selector
+propiedades 
+valores*/
+/*@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,400;0,900;1,100&family=Spicy+Rice&display=swap');/*recuerda agregar todos los estilos que vas a usar*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,400;0,600;0,900;1,100;1,500&family=Spicy+Rice&display=swap');
+/*
+body{
+background:purple;
+font-family: 'Oswald', sans-serif;
+
+/*font-family: Arial, Helvetica, sans-serif;*/ /*
+Va a buscar arial, si no encuentra helvetica, sino uan sans serif
+si tiene dos palabras se pone en comillas 'Times New Roman'
+fonts.google.com
+se obtiene un link con un ahoja de estilos externa o una mmanera d einsertarla interna
+*/
+
+/*
+body div nav img{
+
+    width: 20px;
+}*/
+/*
+.Sec{
+
+    color:white;
+}
+
+#experience{
+
+    background-color: teal;
+    font-family: 'Spicy Rice', cursive;
+    /*line-height: 0px; 1.5em o 150% espacio entre lineas
+    1em= tamaño actual de la uente
+    ej tamaño actual 10px 1em=10px
+
+    font-weight: normal, bolg, lgiht?;
+    font-style: italica por ejemplo
+    letter-spacing: separacion ente caracteres
+    text-transform: permite cambiar todo a mayusculas, minuscilas, etc;
+    text-decoration: agregar tachados, etc al texto;
+    */
+
+
+/*
+Colores en css, ombre del color
+hexadecimal o rgb() rgba()
+hls() hlsa()
+
+
+*/
+
+
+/*las tags a ya vienen con un estilo predeterminado, entonces se debe ser especifico header a {} por ejemplo*/
+
+
+/* ademas de un bg de color se puede usar una imagen
+
+section{
+
+    background-image: url('../Images/AvatarLili.png');
+    background-size: width y height de la imagen de fondo
+    background-repeat: si quieres que se repita o no x veces
+    background-position
+    background-position-x: para ubicar la imagen de fondo
+    puedes tener unbg de imagen como uno de fondo
+
+    border
+    border-top: tamaño tipo estilo
+    border-color:
+    no funciona sin border-width a su vez no funciona sin
+    border-style
+    puedes aislar una propiedad especifica
+    border-top-color
+    border-radius te deja redodear las esquinas
+    border-top-left-radius
+}
+
+../ carpeta relativa el doble punto es para indicar que te sales de la main y entras a otra
+el archivo esta en la carpeta de css, te sales de la carpeta css y entras a la de images, po eso los puntos
+*/
+
+
+/*margin top right bottom left manecillas del reloj
+margin top bottom
+margin auto centra elementos
+
+el objeto padre debe tener un "relleno* hacia su elemento hijo, padding 
+
+box-sizing:border-box va a medir lo amximo del borde de 500
+*/
+
+/*el elemento head por default no se muestra
+display:none; ya no lo muestra
+
+
+*/
+
+.head{
+
+    background-color:#A4C5C6;
+    display: flex;
+    height: 50px;
+    flex-shrink:0;
+    justify-content: space-between;
+}
+
+.head-fig{
+    margin:8px 10px;
+
+    display: block;
+    
+  
+}
+
+.head-img{
+    display: block;
+    margin:auto;
+
+
+}
+
+.head-menu{
+  
+    color: white;
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    height: 50px;
+  /*  border: 1px black solid;*/
+    margin: 0px;
+  
+    
+    list-style: none;
+}
+
+.head-menu li{
+  
+    height: inherit;
+    
+   /* border: 1px white solid;*/
+  
+}
+
+.head-a{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    text-decoration: none;
+    display: flex; /*estudiar con calma*/
+    align-items: center;
+    height: inherit; /* esto lo necesito para que todo el pedazo sea a*/
+
+  
+    
+   /* border: 1px red solid;   */
+}
+
+body{
+    background-color: #481380;
+    width: 1280;
+    
+}
+
+.hero{
+    background-image: url(../Images/texture2.png);
+    background-repeat:no-repeat;
+    
+    display: flex;
+    width: 1200px;
+    height: 450px;
+    margin: 10px auto;
+    
+}
+
+.hero-1{
+
+    width: 500px;
+    height: 450px;
+    border-right: 5px #481380 dotted;
+    
+
+}
+
+.hero h1{
+
+    display: block;
+    
+    color:#481380;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    
+    margin:70px 30px;
+   /* text-align: center;*/
+    
+  
+ 
+}
+
+.hero-enf{
+    color:#25054F;
+}
+
+.hero-fig img{
+    /*border: 1px #481380 solid;*/
+    border: 20px#481380 solid;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+
+.port-sec{
+    background-color: #A4C5C6;
+   
+    margin:0px;
+    height: 700px;
+    
+    
+}
+
+.port-sec-title {
+    
+    margin: 20px;
+    width: 1000px;
+    padding: 20px;
+
+   /* border: 3px black solid;*/
+   /* background-color: #481380;*/
+}
+
+.port-sec-title1{
+    font-family: 'Poppins', sans-serif;
+    color: #856C8B;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    
+}
+
+.port-sec-link{
+    color:#856C8B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    /*border: 2px green solid;*/
+    margin-top:-5px;
+    display: block;
+    
+    
+}
+.port-sec-link:hover{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    /*border: 2px green solid;*/
+    margin-top:-3px;
+    display: block;
+    
+    
+}
+
+.port-sec-proy1{
+
+    display: flex;
+    flex-shrink: 0;
+}
+
+.port-sec-text{
+   
+    margin-left: 20px;
+    
+
+    background-color: white;
+    color:  #856C8B;
+    width: 500px;
+  
+   
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+.port-sec-text article h3{
+    
+    margin: 30px  0px 0px 0px;
+}
+
+.port-sec-text article h5{
+  
+    margin: 0px;
+}
+
+
+.port-sec-vid{
+    margin-right: 20px;
+}
+
+
+.experience{
+    color:  #856C8B;
+    font-family: 'Poppins', sans-serif;
+    height: 250px;
+    margin: 20px 0px 20px 0px;
+    padding: 20px;
+    
+}
+
+.sec-art{
+
+    display: flex;
+}
+
+.experience article{
+    background-color:#EFB1FF;
+    height: 100px;
+    width:500px;
+   
+    margin: auto;
+    text-align: center;
+    
+    
+}
+
+.experience article h5,
+.experience article h3,
+.experience article h6
+{
+
+    margin: 0px;
+    
+   
+}
+
+
+.exp-fig{
+    
+    width: 200px;
+    background-color:white;
+    margin: auto;
+    
+}
+.exp-fig img{
+
+    width: 200px;
+}
+
+
+
+
+.flexbox{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.box{
+
+border:1px crimson solid;
+width: 200px;
+height: 200px;
+flex-shrink: 0;
+margin: 5px;
+display: flex;
+
+
+}
+
+.box1{
+
+    border: 2px blue solid;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+  
+}
+
+
+
+.Contact{
+    height: 100px;
+  
+    display: flex;
+    align-items: center;
+    background-color:#FFEB99 ;
+    border: 5px pink solid;
+   
+   
+}
+
+.form-contact h3{
+    font-family: 'Poppins', sans-serif;
+    color:#7F78D2;
+    display: block;
+
+  
+    margin: 10px 30px 0px 30px;
+}
+
+.form-contact input{
+
+    margin: 0 30px 0px 30px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-shrink: 0;
+    
+}
+
+.contact-button{
+
+    background-color:violet;
+    display: block;
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom:0px;
+    border: 2px gray solid;
+    color:white;
+    border-radius: 5px;
+}
+
+.contact-fig{
+
+   display: inherit;
+ 
+  
+}
+   
+
+
+.contact-img{
+    margin-left: 800px;
+    width: 80px;
+}
+
+.footer{
+
+    background-color:#A4C5C6;
+    color: #7F78D2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    padding: 10px;
+    height: 20px;
+}
